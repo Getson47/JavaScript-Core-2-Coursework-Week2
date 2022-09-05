@@ -14,6 +14,14 @@ let salaries = {
 
 // WRITE BELOW THIS LINE
 
+for (const earnMore in salaries) {
+  if (salaries > 50000);
+
+  console.log(salaries);
+}
+
+
+
 // Expected Result:
 // monica: $55000
 // rachel: $90000

@@ -13,8 +13,10 @@ let people = [
   { name: "Elise", age: 35 },
 ];
 
-let peopleNames =
+let peopleNames = people.map(people => {
+  return people.name;
+});
   /* todo */
 
   // DO NOT EDIT BELOW THIS LINE
-  console.log(`Expected output: Bob,John,Elise. Actual output: ${peopleNames}`);
+ console.log(`Expected output: Bob,John,Elise. Actual output: ${peopleNames}`);

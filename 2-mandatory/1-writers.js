@@ -61,7 +61,10 @@ Exercise 1:
 */
 function logAllWriters() {
   // write your code to log all writers here
-};
+writers.forEach(writer => {
+    console.log()
+}
+    
 
 /*
 Exercise 2:
@@ -72,7 +75,8 @@ Exercise 2:
 
 function logDeadWritersInTheirForties() {
   // write your code here
-}
+  
+
 
 /*
 Exercise 3:
@@ -82,6 +86,15 @@ Exercise 3:
 
 function logAliveWritersInTheirForties() {
   // write your code here
+writers.forEach(writers => {
+  if (age >39 & age < 50 ) {
+    console.log(
+      'Hi, my name is (writers.FirstName) (writers.lastName). I am (writers.age) years old'
+    );
+    
+  }
+    
+  });
 }
 
 /* ======= TESTS - DO NOT MODIFY ===== 
@@ -115,4 +128,4 @@ function expectFunctionToLog(f, values) {
       expect(consoleLogSpy).nthCalledWith(i+1, value);
     });
     consoleLogSpy.mockRestore();
-};
+}
